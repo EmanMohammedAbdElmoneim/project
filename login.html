@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log in</title>
+    <link rel="icon" href="images/hacker_PNG23.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet"href="navb.css">
+    <link rel="stylesheet"href="login.css">
+</head>
+<body>
+    <header class="navbar">
+            <img class="logo" src="images/logo.png">
+            <nav id="toggle">
+                <ul>
+                    <li ><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li ><a onclick="menu()" id="ai" class="aii">More <span class="caret"></span></a>
+                    </li>
+                    <ul id="drop">
+                            <li><a href="ctf.html">CTF</a></li>
+                            <li><a href="phases.html">Phases of hacking</a></li>
+                            <li><a href="typesOfHackers.html">Types of hackers</a></li>
+                            <li><a href="types%20of%20attacks.html">Different types of attacks</a></li>
+                            <li id="ai" class="aii" onclick="dropd2()">
+                                MalWares<span class="caret"></span>
+                                <ul id="drop2">
+                                    <li><a href="ran.html">Ransomware</a></li>
+                                    <li><a href="keylogger.html">Keylogger</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+                    <li id="lu"><a href="sign%20up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="lu"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-btn" onclick="toggleSlid()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    <br><br>
+    <div class="contain">
+        
+        <form class="for">
+    <h1>Log In</h1>
+    <p>Please fill in this form to log in.</p>
+    <hr>
+
+    <label ><b>Email</b></label>
+    <br>
+    <input id="use" type="text" placeholder="Email" name="email" required>
+    <br><br>
+    <label><b>Password</b></label>
+    <br>
+    <input id="pass" type="password" placeholder="Password" name="psw" required>
+    <br><br><br><br><br><br>
+    <div class="but">
+        <button type="button" class="btn ">Forget Passward</button>
+        <button type="button" class="btn" onclick="logIn()">Log In</button>
+    </div>
+    <div class="but1">
+        <button type="button" class="btn2">log in with facebook</button>
+    </div>
+    <br><br>
+   </form>
+    
+    </div>
+    <p id="demo"></p>
+    <script src="login.js" id="login">
+    </script>
+    </body>
+</html>

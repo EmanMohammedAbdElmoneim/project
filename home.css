@@ -1,0 +1,277 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header.navbar
+{
+    position: absolute;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999px;
+}
+header .logo
+{
+    height: 40px;
+    float: left;
+    margin: 10px 0px;
+}
+header nav
+{
+    float: right;
+    z-index: 999px;
+}
+header nav ul
+{
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+header nav ul li
+{
+    list-style: none;
+    padding: 20px;
+}
+header nav ul li a
+{
+    color: #32c4fa;
+    text-decoration: none;
+}
+
+header nav ul li:hover
+{
+    background-color: #5a5858;
+    text-decoration: none;
+}
+header nav ul li a:hover, a:link , a:visited , #ai
+{
+    text-decoration: none;
+    color: #f1f2f7;
+}
+#ai{
+    cursor: pointer;
+}
+#drop
+{
+    margin: -30px;
+    display: none;
+    position: absolute;
+    z-index: 55;
+    background-color: #0f0f0f;
+}
+#drop2
+{
+    display: none;
+    position: absolute;
+    z-index: 55;
+    background-color: #171717;
+}
+#drop.down , #drop2.down2
+{
+   display: block;
+}
+#drop2.down2 li{
+    border-bottom: 1px solid white;
+}
+@media (min-width:991px)
+{
+    #drop2{
+    margin: 20px;
+    }
+    #drop{
+    margin: 60px;
+    }
+}
+.toggle-btn span
+{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0px;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    margin: 15px 0px;
+    float: right;
+    cursor: pointer;
+    display: none;
+    border: 1px white outset;
+    border-radius: 5px;
+    padding: 5px;
+}
+@media (max-width: 991px)
+{
+    header.navbar
+    {
+        padding: 0 20px;
+        z-index: 999;
+        position: fixed;!important
+    }
+    .toggle-btn
+    {
+        display: block;
+    }
+    header nav
+    {
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        top: -400px;
+        left: 0px;
+        z-index: 999;
+    }
+    header nav.active
+    {
+        top: 60px;
+    }
+    header nav ul
+    {
+        display: block;
+    }  
+    #drop{
+        margin-left: 120px;
+    }
+    #drop2.down2{
+        display:flex;
+    }
+    #drop2.down2 li{
+        
+        border-right: 1px solid white;
+    }
+}
+.div1{
+    background-image: url(images/background.jpg);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.div1-1{
+    min-height:600px;
+    background-color: rgb(0, 0, 0 , 0.6);
+    padding-bottom: 10px;
+}
+
+#div1-2{
+    padding: 200px 70px;
+    color: #32c4fa;
+    font-size: 26px;
+    text-align: center;
+    font-family:monospace;
+}
+
+#div2{
+    margin: 20px;
+}
+.p2{
+   font-size: 20px;
+}
+.p3{
+   font-size: 20px;
+}
+.p4{
+    background-color: black;
+}
+.sp{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+    width:100%; 
+}
+.ething , .ether{
+    min-height: 300px;
+}
+#demo{
+    color: #466776;
+    font-size: 20px;
+}
+.vid{
+    border:0px;
+    height: 400px;
+    margin: 0% 25%;
+    padding: 0px;
+}
+#if {
+    padding: 25px;
+    background-color: #a7d0f8;
+    max-height: 450px;
+}
+@media (max-width : 991px){
+    .vid{
+        height: 200px;
+    }
+}
+.navbar{
+    font-size:18px;
+}
+/*guiz*/
+#quiz {
+	margin: 20px;
+	background: #a7d0f8;
+	padding: 20px;
+	max-width: 700px;
+	border-radius: 20px;
+    max-height: 500px;
+}
+@media (max-width:1236px){
+    #quiz{
+        max-width: 550px;
+    }
+}
+@media (max-width:1086px){
+    #quiz{
+        max-width: 500px;
+    }
+}
+@media (max-width:750px){
+    #quiz{
+        max-width: 550px;
+    }
+}
+@media (max-width:600px){
+    #quiz{
+        max-width: 450px;
+    }
+}
+#button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+#button:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+}
+#after-submit{
+    margin: 40px;
+	visibility: hidden;
+	background: #f74c51;
+	padding: 20px;
+	width: 400px;
+	border-radius: 20px;
+	font-size: 30px;
+}
+#picture{
+	max-width: 300px;
+	max-height: 245px;
+}
+#mc {
+	display: inline;
+}
