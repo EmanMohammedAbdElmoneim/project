@@ -43,7 +43,7 @@ function check(){
     }
     
     var messages =["Great Job" , "That is just Okay" , "You really need to do Better"];
-    var pictures =["images/win.gif" , "images/meh.gif" , "images/lose.gif"];
+    var pictures =["win.gif" , "meh.gif" , "lose.gif"];
     var range;
     
     if(correct <1){
