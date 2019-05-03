@@ -145,7 +145,7 @@ header nav ul li a:hover, a:link , a:visited , #ai
     }
 }
 .div1{
-    background-image: url(images/background.jpg);
+    background-image: url(background.jpg);
     min-height: 600px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
